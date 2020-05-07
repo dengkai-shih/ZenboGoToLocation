@@ -27,45 +27,44 @@
 19-->D:\30.work\Android\zenbo-devel\ZenboGoToLocation\ZenboSDK\ZenboGoToLocation\src\main\AndroidManifest.xml:11:9-41
 20        android:supportsRtl="true"
 20-->D:\30.work\Android\zenbo-devel\ZenboGoToLocation\ZenboSDK\ZenboGoToLocation\src\main\AndroidManifest.xml:12:9-35
-21        android:testOnly="true"
-22        android:theme="@style/RobotDevTheme" >
-22-->D:\30.work\Android\zenbo-devel\ZenboGoToLocation\ZenboSDK\ZenboGoToLocation\src\main\AndroidManifest.xml:13:9-45
-23        <activity android:name="com.asus.zenbogotolocation.MainActivity" >
-23-->D:\30.work\Android\zenbo-devel\ZenboGoToLocation\ZenboSDK\ZenboGoToLocation\src\main\AndroidManifest.xml:15:9-25:20
-23-->D:\30.work\Android\zenbo-devel\ZenboGoToLocation\ZenboSDK\ZenboGoToLocation\src\main\AndroidManifest.xml:15:19-47
-24            <intent-filter>
-24-->D:\30.work\Android\zenbo-devel\ZenboGoToLocation\ZenboSDK\ZenboGoToLocation\src\main\AndroidManifest.xml:16:13-24:29
-25                <action android:name="android.intent.action.MAIN" />
-25-->D:\30.work\Android\zenbo-devel\ZenboGoToLocation\ZenboSDK\ZenboGoToLocation\src\main\AndroidManifest.xml:17:17-69
-25-->D:\30.work\Android\zenbo-devel\ZenboGoToLocation\ZenboSDK\ZenboGoToLocation\src\main\AndroidManifest.xml:17:25-66
-26
-27                <category android:name="com.asus.intent.category.ZENBO" />
-27-->D:\30.work\Android\zenbo-devel\ZenboGoToLocation\ZenboSDK\ZenboGoToLocation\src\main\AndroidManifest.xml:18:17-75
-27-->D:\30.work\Android\zenbo-devel\ZenboGoToLocation\ZenboSDK\ZenboGoToLocation\src\main\AndroidManifest.xml:18:27-72
-28                <category android:name="com.asus.intent.category.ZENBO_LAUNCHER" />
-28-->D:\30.work\Android\zenbo-devel\ZenboGoToLocation\ZenboSDK\ZenboGoToLocation\src\main\AndroidManifest.xml:19:17-84
-28-->D:\30.work\Android\zenbo-devel\ZenboGoToLocation\ZenboSDK\ZenboGoToLocation\src\main\AndroidManifest.xml:19:27-81
-29
-30                <!-- please comment out the following line when you want to launch to Zenbo App Store -->
-31                <!-- See Zenbo Developer Web: Zenbo-SDK-Getting-Started: Important notes on Zenbo APP developing -->
-32                <category android:name="android.intent.category.LAUNCHER" />
-32-->D:\30.work\Android\zenbo-devel\ZenboGoToLocation\ZenboSDK\ZenboGoToLocation\src\main\AndroidManifest.xml:23:17-77
-32-->D:\30.work\Android\zenbo-devel\ZenboGoToLocation\ZenboSDK\ZenboGoToLocation\src\main\AndroidManifest.xml:23:27-74
-33            </intent-filter>
-34        </activity>
-35
-36        <meta-data
-36-->[com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\65648d1f2c95227ab193b3dd913500f8\appcompat-v7-26.1.0\AndroidManifest.xml:26:9-28:38
-37            android:name="android.support.VERSION"
-37-->[com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\65648d1f2c95227ab193b3dd913500f8\appcompat-v7-26.1.0\AndroidManifest.xml:27:13-51
-38            android:value="26.1.0" />
-38-->[com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\65648d1f2c95227ab193b3dd913500f8\appcompat-v7-26.1.0\AndroidManifest.xml:28:13-35
-39        <meta-data
-39-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\80d16882df84533bd1e54bba9b1c4328\runtime-1.0.0\AndroidManifest.xml:25:9-27:47
-40            android:name="android.arch.lifecycle.VERSION"
-40-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\80d16882df84533bd1e54bba9b1c4328\runtime-1.0.0\AndroidManifest.xml:26:13-58
-41            android:value="27.0.0-SNAPSHOT" />
-41-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\80d16882df84533bd1e54bba9b1c4328\runtime-1.0.0\AndroidManifest.xml:27:13-44
-42    </application>
-43
-44</manifest>
+21        android:theme="@style/RobotDevTheme" >
+21-->D:\30.work\Android\zenbo-devel\ZenboGoToLocation\ZenboSDK\ZenboGoToLocation\src\main\AndroidManifest.xml:13:9-45
+22        <activity android:name="com.asus.zenbogotolocation.MainActivity" >
+22-->D:\30.work\Android\zenbo-devel\ZenboGoToLocation\ZenboSDK\ZenboGoToLocation\src\main\AndroidManifest.xml:15:9-25:20
+22-->D:\30.work\Android\zenbo-devel\ZenboGoToLocation\ZenboSDK\ZenboGoToLocation\src\main\AndroidManifest.xml:15:19-47
+23            <intent-filter>
+23-->D:\30.work\Android\zenbo-devel\ZenboGoToLocation\ZenboSDK\ZenboGoToLocation\src\main\AndroidManifest.xml:16:13-24:29
+24                <action android:name="android.intent.action.MAIN" />
+24-->D:\30.work\Android\zenbo-devel\ZenboGoToLocation\ZenboSDK\ZenboGoToLocation\src\main\AndroidManifest.xml:17:17-69
+24-->D:\30.work\Android\zenbo-devel\ZenboGoToLocation\ZenboSDK\ZenboGoToLocation\src\main\AndroidManifest.xml:17:25-66
+25
+26                <category android:name="com.asus.intent.category.ZENBO" />
+26-->D:\30.work\Android\zenbo-devel\ZenboGoToLocation\ZenboSDK\ZenboGoToLocation\src\main\AndroidManifest.xml:18:17-75
+26-->D:\30.work\Android\zenbo-devel\ZenboGoToLocation\ZenboSDK\ZenboGoToLocation\src\main\AndroidManifest.xml:18:27-72
+27                <category android:name="com.asus.intent.category.ZENBO_LAUNCHER" />
+27-->D:\30.work\Android\zenbo-devel\ZenboGoToLocation\ZenboSDK\ZenboGoToLocation\src\main\AndroidManifest.xml:19:17-84
+27-->D:\30.work\Android\zenbo-devel\ZenboGoToLocation\ZenboSDK\ZenboGoToLocation\src\main\AndroidManifest.xml:19:27-81
+28
+29                <!-- please comment out the following line when you want to launch to Zenbo App Store -->
+30                <!-- See Zenbo Developer Web: Zenbo-SDK-Getting-Started: Important notes on Zenbo APP developing -->
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->D:\30.work\Android\zenbo-devel\ZenboGoToLocation\ZenboSDK\ZenboGoToLocation\src\main\AndroidManifest.xml:23:17-77
+31-->D:\30.work\Android\zenbo-devel\ZenboGoToLocation\ZenboSDK\ZenboGoToLocation\src\main\AndroidManifest.xml:23:27-74
+32            </intent-filter>
+33        </activity>
+34
+35        <meta-data
+35-->[com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\65648d1f2c95227ab193b3dd913500f8\appcompat-v7-26.1.0\AndroidManifest.xml:26:9-28:38
+36            android:name="android.support.VERSION"
+36-->[com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\65648d1f2c95227ab193b3dd913500f8\appcompat-v7-26.1.0\AndroidManifest.xml:27:13-51
+37            android:value="26.1.0" />
+37-->[com.android.support:appcompat-v7:26.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\65648d1f2c95227ab193b3dd913500f8\appcompat-v7-26.1.0\AndroidManifest.xml:28:13-35
+38        <meta-data
+38-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\80d16882df84533bd1e54bba9b1c4328\runtime-1.0.0\AndroidManifest.xml:25:9-27:47
+39            android:name="android.arch.lifecycle.VERSION"
+39-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\80d16882df84533bd1e54bba9b1c4328\runtime-1.0.0\AndroidManifest.xml:26:13-58
+40            android:value="27.0.0-SNAPSHOT" />
+40-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\80d16882df84533bd1e54bba9b1c4328\runtime-1.0.0\AndroidManifest.xml:27:13-44
+41    </application>
+42
+43</manifest>

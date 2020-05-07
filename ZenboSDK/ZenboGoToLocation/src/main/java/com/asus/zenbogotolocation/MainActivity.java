@@ -29,26 +29,26 @@ public class MainActivity extends RobotActivity {
     private static boolean isRobotApiInitialed = false;
 
     // 1st roomInfo string
-    private String Room1_private_string;
-    private String Room2_private_string;
-    private String Room3_private_string;
-    private String Room4_private_string;
+    private static String Room1_private_string;
+    private static String Room2_private_string;
+    private static String Room3_private_string;
+    private static String Room4_private_string;
 
     // buttons
     private Button mButtonGrantPermission;
     private Button mButtonGetRoomInfo;
-    private Button mButtonGoTo;
-    private Button mButtonGoTo2;
-    private Button mButtonGoTo3;
-    private Button mButtonGoTo4;
+    private static Button mButtonGoTo;
+    private static Button mButtonGoTo2;
+    private static Button mButtonGoTo3;
+    private static Button mButtonGoTo4;
     private Button private_button_cancel;
 
     // textViews
     private TextView mTextViewPermissionStatus;
-    private TextView mTextViewRoom1Keyword;
-    private TextView mTextViewRoom2Keyword;
-    private TextView mTextViewRoom3Keyword;
-    private TextView mTextViewRoom4Keyword;
+    private static TextView mTextViewRoom1Keyword;
+    private static TextView mTextViewRoom2Keyword;
+    private static TextView mTextViewRoom3Keyword;
+    private static TextView mTextViewRoom4Keyword;
     private TextView mTextViewDestination;
 
     @Override
@@ -301,7 +301,6 @@ public class MainActivity extends RobotActivity {
     }
 
 
-
     public static RobotCallback robotCallback = new RobotCallback() {
         @Override
         public void initComplete() {
@@ -309,6 +308,30 @@ public class MainActivity extends RobotActivity {
 
             Log.d("ZenboGoToLocation", "initComplete()");
             isRobotApiInitialed = true;
+
+            try {
+
+                //3. use robotAPI to get all room info:
+                ArrayList<RoomInfo> arrayListRooms = robotAPI.contacts.room.getAllRoomInfo();
+
+                Room1_private_string = arrayListRooms.get(0).keyword;
+                Log.d("ZenboGoToLocation", "arrayListRooms = " + arrayListRooms);
+                Log.d("ZenboGoToLocation", "arrayListRooms(0) = " + Room1_private_string);
+                mTextViewRoom1Keyword.setText("Go to "+ Room1_private_string);
+                mButtonGoTo.setEnabled(true);
+                Room2_private_string = arrayListRooms.get(1).keyword;
+                mTextViewRoom2Keyword.setText( "Go to " +Room2_private_string);
+                mButtonGoTo2.setEnabled(true);
+                Room3_private_string = arrayListRooms.get(2).keyword;
+                mTextViewRoom3Keyword.setText( "Go to " +Room3_private_string);
+                mButtonGoTo3.setEnabled(true);
+                Room4_private_string = arrayListRooms.get(3).keyword;
+                mTextViewRoom4Keyword.setText( "Go to " +Room4_private_string);
+                mButtonGoTo4.setEnabled(true);
+            }
+            catch (Exception e){
+                Log.d("ZenboGoToLocation", "get room info result exception = "+ e);
+            }
         }
 
         @Override
