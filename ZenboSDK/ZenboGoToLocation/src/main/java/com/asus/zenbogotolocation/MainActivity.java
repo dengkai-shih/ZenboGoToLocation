@@ -204,12 +204,38 @@ public class MainActivity extends RobotActivity {
                 if(!mTextViewDestination.equals("")) {
                     if (isRobotApiInitialed) {
                         // use robotAPI to go to the position "keyword":
-                        robotAPI.cancelCommand(robotAPI.motion());
+                        // robotAPI.cancelCommand(robotAPI.motion());
+                        robotAPI.cancelCommandAll();
                         mTextViewDestination.setText("Command Cancelled");
                     }
                 }
             }
         });
+
+
+        try {
+
+            //3. use robotAPI to get all room info:
+            ArrayList<RoomInfo> arrayListRooms = robotAPI.contacts.room.getAllRoomInfo();
+
+            Room1_private_string = arrayListRooms.get(0).keyword;
+            Log.d("ZenboGoToLocation", "arrayListRooms = " + arrayListRooms);
+            Log.d("ZenboGoToLocation", "arrayListRooms(0) = " + Room1_private_string);
+            mTextViewRoom1Keyword.setText("Go to "+ Room1_private_string);
+            mButtonGoTo.setEnabled(true);
+            Room2_private_string = arrayListRooms.get(1).keyword;
+            mTextViewRoom2Keyword.setText( "Go to " +Room2_private_string);
+            mButtonGoTo2.setEnabled(true);
+            Room3_private_string = arrayListRooms.get(2).keyword;
+            mTextViewRoom3Keyword.setText( "Go to " +Room3_private_string);
+            mButtonGoTo3.setEnabled(true);
+            Room4_private_string = arrayListRooms.get(3).keyword;
+            mTextViewRoom4Keyword.setText( "Go to " +Room4_private_string);
+            mButtonGoTo4.setEnabled(true);
+        }
+        catch (Exception e){
+            Log.d("ZenboGoToLocation", "get room info result exception = "+ e);
+        }
     }
 
 
@@ -248,6 +274,30 @@ public class MainActivity extends RobotActivity {
         mTextViewRoom4Keyword.setText(getString(R.string.string_room4_info));
         mButtonGoTo4.setEnabled(false);
         Room2_private_string="";
+
+        try {
+
+            //3. use robotAPI to get all room info:
+            ArrayList<RoomInfo> arrayListRooms = robotAPI.contacts.room.getAllRoomInfo();
+
+            Room1_private_string = arrayListRooms.get(0).keyword;
+            Log.d("ZenboGoToLocation", "arrayListRooms = " + arrayListRooms);
+            Log.d("ZenboGoToLocation", "arrayListRooms(0) = " + Room1_private_string);
+            mTextViewRoom1Keyword.setText("Go to "+ Room1_private_string);
+            mButtonGoTo.setEnabled(true);
+            Room2_private_string = arrayListRooms.get(1).keyword;
+            mTextViewRoom2Keyword.setText( "Go to " +Room2_private_string);
+            mButtonGoTo2.setEnabled(true);
+            Room3_private_string = arrayListRooms.get(2).keyword;
+            mTextViewRoom3Keyword.setText( "Go to " +Room3_private_string);
+            mButtonGoTo3.setEnabled(true);
+            Room4_private_string = arrayListRooms.get(3).keyword;
+            mTextViewRoom4Keyword.setText( "Go to " +Room4_private_string);
+            mButtonGoTo4.setEnabled(true);
+        }
+        catch (Exception e){
+            Log.d("ZenboGoToLocation", "get room info result exception = "+ e);
+        }
     }
 
 
