@@ -9,8 +9,8 @@ import com.asus.robotframework.API.RobotCallback;
 
 
 public class RobotActivity extends Activity{
-    /*public RobotAPI robotAPI;*/
-    public static RobotAPI robotAPI;
+    public RobotAPI robotAPI;
+    /*public static RobotAPI robotAPI;*/
     RobotCallback robotCallback;
     RobotCallback.Listen robotListenCallback;
 

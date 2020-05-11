@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.asus.robotframework.API.RobotAPI;
 import com.asus.robotframework.API.RobotCallback;
 import com.asus.robotframework.API.RobotCmdState;
 import com.asus.robotframework.API.RobotErrorCode;
@@ -50,6 +51,10 @@ public class MainActivity extends RobotActivity {
     private static TextView mTextViewRoom3Keyword;
     private static TextView mTextViewRoom4Keyword;
     private TextView mTextViewDestination;
+
+    // priavte static
+    private static RobotAPI robotAPIStatic;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -236,6 +241,8 @@ public class MainActivity extends RobotActivity {
         catch (Exception e){
             Log.d("ZenboGoToLocation", "get room info result exception = "+ e);
         }
+
+        robotAPIStatic = this.robotAPI;
     }
 
 
@@ -312,7 +319,7 @@ public class MainActivity extends RobotActivity {
             try {
 
                 //3. use robotAPI to get all room info:
-                ArrayList<RoomInfo> arrayListRooms = robotAPI.contacts.room.getAllRoomInfo();
+                ArrayList<RoomInfo> arrayListRooms = robotAPIStatic.contacts.room.getAllRoomInfo();
 
                 Room1_private_string = arrayListRooms.get(0).keyword;
                 Log.d("ZenboGoToLocation", "arrayListRooms = " + arrayListRooms);
